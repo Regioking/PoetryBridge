@@ -1,0 +1,94 @@
+[{
+		"title_c": "春晓",
+		"title_e": "A Spring Morning",
+		"author": "孟浩然 Meng Haoran",
+		"audioid": "chunxiao",
+		"content": "春眠不觉晓\nThis spring morning in bed I 'm lying,\n处处闻啼鸟\nNot to awake till birds are crying.\n夜来风雨声\nAfter one night of wind and showers,\n花落知多少\nHow many are the fallen flowers!\n"
+	},
+
+	{
+		"title_c": "枫桥夜泊",
+		"title_e": "Mooring by Maple Bridge at Night",
+		"author": "张继 Zhang Ji",
+		"audioid": "fengqiaoyebo",
+		"content": "月落乌啼霜满天\nThe crows at moonset cry,streaking the frosty sky;\n江枫渔火对愁眠\nFacing dim fishing boats neath maples,sad I lie.\n姑苏城外寒山寺\nBeyond the city wall,from Temple of Cold Hill\n夜半钟声到客船\nBells break the ship - borne roamer 's dream in midnight still.\n"
+	},
+
+	{
+		"title_c": "江南春",
+		"title_e": "Spring on the Southern Rivershore",
+		"author": "杜牧 Du Mu",
+		"audioid": "jiangnanchun",
+		"content": "千里莺啼绿映红\nOrioles sing for miles amid red blooms and green trees;\n水村山郭酒旗风\nBy hills and rills wine shop streamers wave in the breeze.\n南朝四百八十寺\nFour hundred eighty splendid temples still remain\n多少楼台烟雨中\nOf Southern Dynasties in the mist and rain.\n"
+	},
+	{
+		"title_c": "望庐山瀑布",
+		"title_e": "The Waterfall in Mount Lu Viewed from Afar",
+		"author": "李白 Li Bai",
+		"audioid": "wanglushanpubu",
+		"content": "日照香炉生紫烟\nThe sunlit Censer Peak exhales incense-like cloud;\n遥看瀑布挂前川\nLike an upended stream the cataract sounds loud.\n飞流直下三千尺\nIts torrent dashes down three thousand feet from high,\n疑是银河落九天\nAs if the Silver River fell from the blue sky.\n"
+	},
+	{
+		"title_c": "大林寺桃花",
+		"title_e": "Peach Blossoms in the Temple of Great Forest",
+		"author": "白居易 Bai Juyi",
+		"audioid": "dalinsitaohua",
+		"content": "人间四月芳菲尽\nAll flowers in late spring have fallen far and wide,\n山寺桃花始盛开\nBut peach blossoms are full-blown on this mountainside.\n长恨春归无觅处\nI often regret spring's gone without leaving its trace,\n不知转入此中来\nI do not know it's come up to adorn this place.\n"
+	},
+	{
+		"title_c": "送杜少府之任蜀州",
+		"title_e": "Farewell to Prefect Du",
+		"author": "王勃 Wang Bo",
+		"audioid": "songdushaofuzhirenshuzhou",
+		"content": "城阙辅三秦，风烟望五津。\nYou'll leave the town walled far and wide\nFor mist-veiled land by riverside.\n与君离别意，同是宦游人。\nI feel on parting sad and drear\nFor both of us are strangers here.\n海内存知己，天涯若比邻。\nIf you have friends who know your hearts,\nDistance cannot keep you apart.\n无为在歧路，儿女共沾巾。\nAt crossroads where we bid adieu,\nDo not shed tears as women do!\n"
+	},
+	{
+		"title_c": "芙蓉楼送辛渐",
+		"title_e": "Farewell to Xin Jian at Lotus Tower",
+		"author": "王昌龄 Wang Changling",
+		"audioid": "furonglousongxinjian",
+		"content": "寒雨连江夜入吴，\nA cold rain dissolved in East Stream invades the night,\n平明送客楚山孤。\nAt dawn you'll leave the lonely Southern hills in haze.\n洛阳亲友如相问，\n If my friends in the North should ask if I'm all right,\n不一片冰心在玉壶。\nTell them I'm free from blame as ice in crystal vase.\n"
+	},
+	{
+		"title_c": "闻王昌龄左迁龙标遥有此寄",
+		"title_e": "To Wang Changling Banished to the West",
+		"author": "李白 Li Bai",
+		"audioid": "wenwangchanglingzuoqianlongbiaoyaoyouciji",
+		"content": "杨花落尽子规啼，\nAll willow-down has fallen and sad cuckoo cry,\n闻道龙标过五溪。\nTo hear you banished southwestward beyond Five Streams.\n我寄愁心与明月，\n I would confide no sorrow to the moon on high,\n随风直到夜郎西。\nFor it will follow you west of the Land of Dreams.\n"
+	},
+	{
+		"title_c": "夜雨寄北",
+		"title_e": "Written on a Rainy Night to My Missing in the North",
+		"author": "李商隐 Li Shangyin",
+		"audioid": "yeyujibei",
+		"content": "君问归期未有期，\nYou ask me when I can return，but I don't know,\n巴山夜雨涨秋池。\nIt rains in western hills and autumn pools overflow.\n何当共剪西窗烛，\n When can we trim by window side the candlelight,\n却话巴山夜雨时。\nAnd talk about the western hills in rainy night?\n"
+	},
+	{
+		"title_c": "相思",
+		"title_e": "Love Seeds",
+		"author": "王维 Wang Wei",
+		"audioid": "xiangsi",
+		"content": "红豆生南国，\nThe red beans grow in southern land,\n春来发几枝？\nHow many load in spring the trees?\n愿君多采颉，\n Gather them till full is your hand;\n此物最相思。\nThey would revive fond memories.\n"
+	},
+	{
+		"title_c": "题都城南庄",
+		"title_e": "Written for a Village South of the Capital",
+		"author": "崔护 Cui Hu",
+		"audioid": "tiduchengnanzhuang",
+		"content": "去年今日此门中，\nIn this house on this day last year a pink face vied,\n人面桃花相映红。\nIn beauty with the pink peach blossom side by side.\n人面不知何处去，\n I do not know today where the pink face has gone,\n桃花依旧笑春风。\nIn vernal breeze still smile pink peach blossoms full blown.\n"
+	},
+	{
+		"title_c": "离思五首其四",
+		"title_e": "Thinking of My Dear Departed",
+		"author": "元稹 Yuan Zhen",
+		"audioid": "lisiwushouqisi",
+		"content": "曾经沧海难为水，\nNo water's wide enough when you have crossed the sea;\n除却巫山不是云。\nNo cloud is beautiful but that which crowns the peak.\n取次花丛懒回顾，\n I pass by flowers which fail to attract poor me;\n半缘修道半缘君。\nHail for your sake and half for Taoism I seek.\n"
+	},
+	{
+		"title_c": "北青萝",
+		"title_e": "At the North Green Vine Hermitage",
+		"author": "李商隐 Li Shangyin",
+		"audioid": "beiqingluo",
+		"content": "残阳西入崦，\nAs the sun sinks behind the hill in the west\n茅屋访孤僧。\nI seek the lone monk in the hut on the crest.\n落叶人何在，\nWhere is my friend amid the fallen leaves?\n寒云路几层。\nUp to the cold clouds the footpath weaves.\n独敲初夜磬，\nAlone, he is sounding the evening bell;\n闲倚一枝藤。\nIdly he leans on a cane in his cell.\n世界微尘里，\nIf human world is contained in dust fine\n吾宁爱与憎。\nWhy should I towards love or hate incline?\n"
+	}
+]
