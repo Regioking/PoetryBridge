@@ -1,6 +1,7 @@
 package cn.edu.cqu.lxq;
 
 import android.content.Context;
+import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
@@ -9,6 +10,8 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
+import android.widget.LinearLayout;
+import android.widget.TextView;
 
 import org.litepal.LitePal;
 
@@ -37,6 +40,12 @@ public class DailyFragment extends Fragment {
 
     List<Poetry> poetryList = new ArrayList<>();
     View view;
+    TextView dateTextView;
+    TextView titleTextView;
+    TextView contentTextView;
+    ImageView imageView;
+    LinearLayout linearLayout;
+    Poetry p;
     private OnFragmentInteractionListener mListener;
 
     public DailyFragment() {
@@ -84,23 +93,46 @@ public class DailyFragment extends Fragment {
         return view;
     }
     private void dailyRecommend(){
+        dateTextView = view.findViewById(R.id.dateTextView);
+        imageView = view.findViewById(R.id.dailyImageView);
+        titleTextView = view.findViewById(R.id.titleTextView);
+        contentTextView = view.findViewById(R.id.contentTextView);
+
         poetryList= LitePal.findAll(Poetry.class);
         int size = poetryList.size();
         int year = Calendar.getInstance().get(Calendar.YEAR);
-        int month = Calendar.getInstance().get(Calendar.MONTH);
+        int month = Calendar.getInstance().get(Calendar.MONTH)+1;
         int date = Calendar.getInstance().get(Calendar.DATE);
-        int num = (year/10 + month*size + date*size/3*10)%size;
+        int num = (  month*100 + date*60)%size;
+
+        dateTextView.setText(year+"-"+month+"-"+date);
        // Log.d("推荐",""+num);
-        Poetry p = poetryList.get(num);
+         p = poetryList.get(num);
         String audioID = p.getAudioId();
         int resourceId = getResources().getIdentifier(audioID,"drawable",getActivity().getPackageName());
        // Log.d("测试resourceId",""+resourceId);\
-        ImageView imageView = view.findViewById(R.id.dailyImageView);
+
         if(resourceId!=0){
             imageView.setImageResource(resourceId);
         }
-
-
+        String EnglishTitle  = p.getEnglishTitle();
+        String[] content = p.getContent().split("\n");
+        String EnglishContent = new String();
+        for(int i =1;i<content.length;i=i+2){
+             EnglishContent += content[i]+"\n";
+        }
+        titleTextView.setText(EnglishTitle);
+        contentTextView.setText(EnglishContent);
+        linearLayout = view.findViewById(R.id.clickLayout);
+        linearLayout.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent it = new Intent();
+                it.putExtra("title",p.getChineseTitle());
+                Intent intent = it.setClass(v.getContext(),DetailActivity.class);
+                v.getContext().startActivity(intent);
+            }
+        });
     }
 
     // TODO: Rename method, update argument and hook method into UI event

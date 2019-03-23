@@ -143,7 +143,7 @@ public class MainActivity extends AppCompatActivity {
         final Button btn_PoetryList = (Button)findViewById(R.id.btn_PoetryList);
         final Button btn_daily = (Button)findViewById(R.id.btn_daily);
         final Button btn_collect = (Button)findViewById(R.id.btn_collect);
-
+        btn_daily.setEnabled(false);
         btn_PoetryList.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v) {
