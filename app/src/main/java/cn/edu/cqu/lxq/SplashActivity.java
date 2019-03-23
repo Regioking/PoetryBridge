@@ -25,7 +25,7 @@ public class SplashActivity extends AppCompatActivity {
                 WindowManager.LayoutParams.FLAG_FULLSCREEN);  //设置全屏
         setContentView(R.layout.activity_splash);
         firstLoad();
-       handler.postDelayed(transition,3000);
+       handler.postDelayed(transition,2000);
     }
 
 

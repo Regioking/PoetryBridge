@@ -51,7 +51,7 @@ public class RecyclePoetryAdapter extends RecyclerView.Adapter<RecyclePoetryAdap
             public void onClick(View v) {
                 int position = holder.getAdapterPosition();
                 Poetry poetry = mPoetryList.get(position);
-                Toast.makeText(v.getContext(), "you clicked view " + poetry.getChineseTitle(), Toast.LENGTH_SHORT).show();
+                //Toast.makeText(v.getContext(), "you clicked view " + poetry.getChineseTitle(), Toast.LENGTH_SHORT).show();
                 Intent it = new Intent();
                 it.putExtra("title",poetry.getChineseTitle());
                 Intent intent = it.setClass(v.getContext(),DetailActivity.class);

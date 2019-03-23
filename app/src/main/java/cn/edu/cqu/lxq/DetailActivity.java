@@ -89,7 +89,7 @@ public class DetailActivity extends AppCompatActivity {
 
                 switch (item.getItemId()){
                     case R.id.audio:
-                        Toast.makeText(DetailActivity.this,"audio",Toast.LENGTH_SHORT).show();
+                       // Toast.makeText(DetailActivity.this,"audio",Toast.LENGTH_SHORT).show();
                         if(flag==0){
                             initDialog();
                             toolbar.getMenu().findItem(R.id.audio).setIcon(R.drawable.earphoned);}

@@ -89,6 +89,7 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+        searchView.setQueryHint("Please enter the search content");
         searchView.setOnQueryTextListener(new SearchView.OnQueryTextListener() {
             @Override
             public boolean onQueryTextSubmit(String query) {
@@ -101,11 +102,11 @@ public class MainActivity extends AppCompatActivity {
                            "or author like ?","%"+query+"%","%"+query+"%","%"+query+"%").find(Poetry.class);
                     if(searchList.size() == 0)
                     {
-                        Toast.makeText(MainActivity.this, "无", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(MainActivity.this, "Please enter what you want to find", Toast.LENGTH_SHORT).show();
                     }
                     else
                     {
-                        Toast.makeText(MainActivity.this, "查找成功", Toast.LENGTH_SHORT).show();
+                        //Toast.makeText(MainActivity.this, "Search success", Toast.LENGTH_SHORT).show();
                         PoetryAdapter searchAdapter = new PoetryAdapter(MainActivity.
                                 this,R.layout.poetrylist_item, searchList);
                         listPopupWindow.setAdapter(searchAdapter);
@@ -124,7 +125,7 @@ public class MainActivity extends AppCompatActivity {
                         "or author like ?","%"+newText+"%","%"+newText+"%","%"+newText+"%").find(Poetry.class);
                 if(searchList.size() != 0)
                 {
-                    Toast.makeText(MainActivity.this, "无", Toast.LENGTH_SHORT).show();
+                    //Toast.makeText(MainActivity.this, "无", Toast.LENGTH_SHORT).show();
                     PoetryAdapter searchAdapter = new PoetryAdapter(MainActivity.
                             this,R.layout.poetrylist_item, searchList);
                     listPopupWindow.setAdapter(searchAdapter);
