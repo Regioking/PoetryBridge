@@ -1,7 +1,9 @@
 package cn.edu.cqu.lxq;
 
 //import android.app.AlertDialog;
+import android.content.Context;
 import android.content.Intent;
+import android.media.AudioManager;
 import android.media.MediaPlayer;
 import android.support.v7.app.ActionBar;
 import android.support.v7.app.AlertDialog;
@@ -64,10 +66,9 @@ public class DetailActivity extends AppCompatActivity {
         setText();
         initToolbar();
 
-        for(Poetry a : p){
-            Log.d("这是详细页面",a.getContent());
-
-        }
+//        for(Poetry a : p){
+//            Log.d("这是详细页面",a.getContent());
+//        }
     }
 
     private void initToolbar(){
@@ -290,7 +291,20 @@ public class DetailActivity extends AppCompatActivity {
 
     @Override
     public boolean onKeyDown(int keyCode, KeyEvent event) {
-        if(keyCode==KeyEvent.KEYCODE_BACK){
+        AudioManager audioManager  = (AudioManager) getSystemService(Context.AUDIO_SERVICE);
+        if (keyCode == KeyEvent.KEYCODE_VOLUME_UP){
+            // 音量+键
+            audioManager.adjustStreamVolume(AudioManager.
+                    STREAM_MUSIC, AudioManager.ADJUST_RAISE,AudioManager.FX_FOCUS_NAVIGATION_UP);
+            return true;
+        }
+        else if (keyCode == KeyEvent.KEYCODE_VOLUME_DOWN){
+            // 音量-键
+            audioManager.adjustStreamVolume(AudioManager.
+                    STREAM_MUSIC, AudioManager.ADJUST_LOWER,AudioManager.FX_FOCUS_NAVIGATION_UP);
+            return true;
+        }
+        else if(keyCode==KeyEvent.KEYCODE_BACK){
             stopThread=true;
             if(dialog !=null){
                 dialog.dismiss();
@@ -300,7 +314,7 @@ public class DetailActivity extends AppCompatActivity {
             }
             this.finish();
         }
-        return true;
+        return super.onKeyDown(keyCode, event);
     }
 
     @Override/////并不是返回键

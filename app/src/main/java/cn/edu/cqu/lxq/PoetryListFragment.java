@@ -89,9 +89,9 @@ public class PoetryListFragment extends Fragment {
 //        listView.setAdapter(adapter);
 
 
-        for (Poetry poetry: poetryList){
-            Log.d("PoetryListFragment test",poetry.getChineseTitle());
-        }
+//        for (Poetry poetry: poetryList){
+//            Log.d("PoetryListFragment test",poetry.getChineseTitle());
+//        }
 
 //////////////这是listView的部分 ，现在改用recyclerView
 //        PoetryAdapter poetryAdapter =
