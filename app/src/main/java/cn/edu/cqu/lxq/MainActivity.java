@@ -77,6 +77,7 @@ public class MainActivity extends AppCompatActivity {
     ///搜索框
     private void initSearchView(){
         searchView = findViewById(R.id.searchView);
+        //searchView.onActionViewExpanded();
         final ListPopupWindow listPopupWindow = new ListPopupWindow(MainActivity.this);
         listPopupWindow.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
@@ -87,6 +88,7 @@ public class MainActivity extends AppCompatActivity {
                 it.putExtra("title",poetry.getChineseTitle());
                 Intent intent = it.setClass(MainActivity.this,DetailActivity.class);
                 startActivity(intent);
+                listPopupWindow.dismiss();
             }
         });
         searchView.setQueryHint("Please enter the search content");
@@ -121,8 +123,14 @@ public class MainActivity extends AppCompatActivity {
 
             @Override
             public boolean onQueryTextChange(String newText) {
-                searchList = LitePal.where("chineseTitle like ? or " + "englishTitle like ? " +
-                        "or author like ?","%"+newText+"%","%"+newText+"%","%"+newText+"%").find(Poetry.class);
+                if(newText!=null&&newText.length()!=0){
+                    Log.d("textchange",newText);
+                    searchList = LitePal.where("chineseTitle like ? or " + "englishTitle like ? " +
+                            "or author like ?","%"+newText+"%","%"+newText+"%","%"+newText+"%")
+                            .limit(8)
+                            .find(Poetry.class);
+                }
+
                 if(searchList.size() != 0)
                 {
                     //Toast.makeText(MainActivity.this, "无", Toast.LENGTH_SHORT).show();
