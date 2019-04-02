@@ -40,7 +40,7 @@
 		"title_e": "Farewell to Prefect Du",
 		"author": "王勃 Wang Bo",
 		"audioid": "songdushaofuzhirenshuzhou",
-		"content": "城阙辅三秦，\n风烟望五津。\nYou'll leave the town walled far and wide\nFor mist-veiled land by riverside.\n与君离别意，\n同是宦游人。\nI feel on parting sad and drear\nFor both of us are strangers here.\n海内存知己，\n天涯若比邻。\nIf you have friends who know your hearts,\nDistance cannot keep you apart.\n无为在歧路，\n儿女共沾巾。\nAt crossroads where we bid adieu,\nDo not shed tears as women do!\n"
+		"content": "城阙辅三秦，\nYou'll leave the town walled far and wide\n风烟望五津。\nFor mist-veiled land by riverside.\n与君离别意，\nI feel on parting sad and drear\n同是宦游人。\nFor both of us are strangers here.\n海内存知己，\nIf you have friends who know your hearts,\n天涯若比邻。\nDistance cannot keep you apart.\n无为在歧路，\nAt crossroads where we bid adieu,\n儿女共沾巾。\nDo not shed tears as women do!\n"
 	},
 	{
 		"title_c": "芙蓉楼送辛渐",
