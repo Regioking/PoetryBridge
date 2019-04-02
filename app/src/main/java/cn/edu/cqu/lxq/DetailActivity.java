@@ -170,41 +170,46 @@ public class DetailActivity extends AppCompatActivity {
 
         String audioID = p.get(0).getAudioId();///当前诗获取资源ID
         int audio = getResources().getIdentifier(audioID,"raw",getPackageName());
-        mediaPlayer = MediaPlayer.create(DetailActivity.this,audio);
+        if(audio!=0){
+            mediaPlayer = MediaPlayer.create(DetailActivity.this,audio);
+            playAudio.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
 
-
-
-        playAudio.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-
-                //mediaPlayer.start();
-                if(!(mediaPlayer.isPlaying())){
-                    //Log.d("yinpin","这是no");
-                    mediaPlayer.start();
-                    playAudio.setImageDrawable(getResources().getDrawable(R.drawable.button_pause_64px));
+                    //mediaPlayer.start();
+                    if(!(mediaPlayer.isPlaying())){
+                        //Log.d("yinpin","这是no");
+                        mediaPlayer.start();
+                        playAudio.setImageDrawable(getResources().getDrawable(R.drawable.button_pause_64px));
+                    }
+                    else if(mediaPlayer.isPlaying()){
+                        Log.d("yinpin","这是is");
+                        mediaPlayer.pause();
+                        playAudio.setImageDrawable(getResources().getDrawable(R.drawable.button_play_64px));
+                    }
+                    /////////////////////////////////////////
+                    seekBar.setOnSeekBarChangeListener( new SeekBarListener());
+                    seekBar.setMax(mediaPlayer.getDuration());
+                    thread = new Thread(new SeekBarThread());
+                    // 启动线程
+                    thread.start();
+                    /////////////////////////////////////////////
                 }
-                else if(mediaPlayer.isPlaying()){
-                   Log.d("yinpin","这是is");
-                    mediaPlayer.pause();
+            });
+
+            mediaPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+                @Override
+                public void onCompletion(MediaPlayer mp) {
                     playAudio.setImageDrawable(getResources().getDrawable(R.drawable.button_play_64px));
                 }
-                /////////////////////////////////////////
-                seekBar.setOnSeekBarChangeListener( new SeekBarListener());
-                seekBar.setMax(mediaPlayer.getDuration());
-                thread = new Thread(new SeekBarThread());
-                // 启动线程
-                thread.start();
-                /////////////////////////////////////////////
-            }
-        });
+            });
 
-        mediaPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
-            @Override
-            public void onCompletion(MediaPlayer mp) {
-                playAudio.setImageDrawable(getResources().getDrawable(R.drawable.button_play_64px));
-            }
-        });
+        }
+        //资源不存在
+        else{
+            Toast.makeText(DetailActivity.this,"No resources",Toast.LENGTH_SHORT).show();
+            dialog.dismiss();
+        }
     }
     /////////////////////////////////////////////////////////////
     class SeekBarThread implements Runnable {

@@ -1,4 +1,4 @@
-[{
+﻿[{
 		"title_c": "春晓",
 		"title_e": "A Spring Morning",
 		"author": "孟浩然 Meng Haoran",
@@ -40,7 +40,7 @@
 		"title_e": "Farewell to Prefect Du",
 		"author": "王勃 Wang Bo",
 		"audioid": "songdushaofuzhirenshuzhou",
-		"content": "城阙辅三秦，风烟望五津。\nYou'll leave the town walled far and wide\nFor mist-veiled land by riverside.\n与君离别意，同是宦游人。\nI feel on parting sad and drear\nFor both of us are strangers here.\n海内存知己，天涯若比邻。\nIf you have friends who know your hearts,\nDistance cannot keep you apart.\n无为在歧路，儿女共沾巾。\nAt crossroads where we bid adieu,\nDo not shed tears as women do!\n"
+		"content": "城阙辅三秦，\n风烟望五津。\nYou'll leave the town walled far and wide\nFor mist-veiled land by riverside.\n与君离别意，\n同是宦游人。\nI feel on parting sad and drear\nFor both of us are strangers here.\n海内存知己，\n天涯若比邻。\nIf you have friends who know your hearts,\nDistance cannot keep you apart.\n无为在歧路，\n儿女共沾巾。\nAt crossroads where we bid adieu,\nDo not shed tears as women do!\n"
 	},
 	{
 		"title_c": "芙蓉楼送辛渐",
@@ -90,5 +90,96 @@
 		"author": "李商隐 Li Shangyin",
 		"audioid": "beiqingluo",
 		"content": "残阳西入崦，\nAs the sun sinks behind the hill in the west\n茅屋访孤僧。\nI seek the lone monk in the hut on the crest.\n落叶人何在，\nWhere is my friend amid the fallen leaves?\n寒云路几层。\nUp to the cold clouds the footpath weaves.\n独敲初夜磬，\nAlone, he is sounding the evening bell;\n闲倚一枝藤。\nIdly he leans on a cane in his cell.\n世界微尘里，\nIf human world is contained in dust fine\n吾宁爱与憎。\nWhy should I towards love or hate incline?\n"
+	},
+	{
+		"title_c": "神情诗",
+		"title_e": "Spirit of the four seasons",
+		"author": "顾恺之 Gu Kaizhi",
+		"audioid": "shenqingshi",
+		"content": "春水满四泽\nSpring water overbrims the streams;\n夏云多奇峰\nSummer could fancy peaks outshines;\n秋月扬明辉\nThe autumn moon sheds brilliant\n冬岭修寒松\nOn winter cliffs stand cold-proof pines.\n"
+	},
+	{
+		"title_c": "望月怀远",
+		"title_e": "Moonlit Lovesickness",
+		"author": "张九龄 Zhang Jiuling",
+		"audioid": "wangyuehuaiyuan",
+		"content": "海上生明月，\nThe moon, grown full now over the sea,\n天涯共此时。\nBrightening the whole of heaven,\n情人怨遥夜，\nBrings to separated hearts\n竟夕起相思。\nThe long thoughtfulness of night.....\n灭烛怜光满，\nIt is no darker though I blow out my candle.\n披衣觉露滋。\nIt is no warmer though I put on my coat.\n不堪盈手赠，\nSo I leave my message with the moon\n还寝梦佳期。\nAnd turn to my bed, hoping for dreams.\n"
+	},
+	{
+		"title_c": "题破山寺后禅院",
+		"title_e": "A Buddhist Retreat Behind Broken-Mountain Temple",
+		"author": "常建 Chang Jian",
+		"audioid": "tiposhansihouchanyuan",
+		"content": "清晨入古寺，\nIn the early morning, near the old temple,\n初日照高林。\nWhere early sunlight enlightens the tree-tops,\n曲径通幽处，\nMy path has wound(wrapped), through a sheltered hollow\n禅房花木深。\nOf boughs and flowers, to a Buddhist retreat.\n山光悦鸟性，\nHere birds are alive with mountain-light,\n潭影空人心。\nAnd the mind of man touches peace in a pool,\n万籁此俱寂，\nAnd a thousand sounds are all quieted\n但馀钟磬音。\nBy the breathing of a temple-bell.\n"
+	},
+	{
+		"title_c": "登鸛雀楼",
+		"title_e": "On The Stock Tower",
+		"author": "王之涣 Wang Zhihuan",
+		"audioid": "dengguanquelou",
+		"content": "白日依山尽，\nThe sun beyond the mountain glows;\n黄河入海流。\nThe Yellow River seawards flows.\n欲穷千里目，\nYou can enjoy a great sight;\n更上一层楼。\nBy climbing to a greater height.\n"
+	},
+	{
+		"title_c": "静夜思",
+		"title_e": "Thoughts on a Tranquil Night",
+		"author": "李白 Li Bai",
+		"audioid": "jingyesi",
+		"content": "床前明月光\nBefore my bed a pool of light--\n疑是地上霜\nO can it be frost on the ground?\n举头望明月\nLooking up, I find the moon bright;\n低头思故乡\nBowing, in homesickness I'm drowned.\n"
+	},
+	{
+		"title_c": "河满子",
+		"title_e": "The Swan Song",
+		"author": "张祜 Zhang Hu",
+		"audioid": "hemanzi",
+		"content": "故国三千里\nHomesick a thousands miles away,\n深宫二十年\nShut in deep palace twenty years.\n一声河满子\nSinging the dying swan's sweet lay,\n双泪落君前\nO how can she hold back her tears!\n"
+	},
+	{
+		"title_c": "从军行",
+		"title_e": "Army Life",
+		"author": "王昌龄 Wangchangling",
+		"audioid": "congjunxing",
+		"content": "青海长云暗雪山\nClouds on frontier have darkened mountains clad in snow;\n孤城遥望玉门关\nThe town with Gate of Jade stands far away, forlorn.\n黄沙百战穿金甲\nWe will not leave the desert till we beat the foe,\n不破楼兰终不还\nAlthough in war our golden armour be outworn.\n"
+	},
+	{
+		"title_c": "别董大",
+		"title_e": "Farewell To A Lutist",
+		"author": "高适 Gao Shi",
+		"audioid": "biedongda",
+		"content": "千里黄云白日曛\nYellow clouds spread for miles and miles have veiled the day,\n北风吹雁雪纷纷\nThe north wind blows down snow and wild geese fly away.\n莫愁前路无知己\nFear not you’ve no admirers as you go along!\n天下谁人不识君\nThere is no connoisseur on earth but loves your song.\n"
+	},
+	{
+		"title_c": "花前",
+		"title_e": "Before The Flowers",
+		"author": "屈大均 Qu Dajun",
+		"audioid": "huaqian",
+		"content": "花前小立影徘徊\nBefore the flowers she stands, with her shadow she roves;\n风解吹裙百褶开\nTo blow apart her hundred-fold dress the wind loves.\n已有泪光同白露\nHer face is bathed in tears as bright as dewdrops white.\n不须明月上衣来\nWhy should the moon shed on her dress its silver light?\n"
+	},
+	{
+		"title_c": "金缕衣",
+		"title_e": "The Golden Dress",
+		"author": "无名氏 nameless",
+		"audioid": "jinlvyi",
+		"content": "劝君莫惜金缕衣\nLove not your golden dress, I pray,\n劝君莫许少年时\nMore then your youthful golden hours.\n有花堪折直须折\nGather sweet blossoms while you may\n莫待无花空折枝\nAnd not the twig devoid of flowers!\n"
+	},
+	{
+		"title_c": "泊船瓜洲",
+		"title_e": "Moored At Melon Islet",
+		"author": "王安石 Wang Anshi",
+		"audioid": "bochuanguazhou",
+		"content": "京口瓜洲一水间\nA river severs Northern shore and Southern land;\n钟山只隔数重山\nBetween my home and me but a few mountains stand.\n春风又绿江南岸\nThe vernal wind has greened the Southern shore again.\n明月何时照我还\nWhen will the moon shine bright on my return? O when?\n"
+	},
+	{
+		"title_c": "塞下曲其一",
+		"title_e": "A Border Song",
+		"author": "卢纶 Lu Lun",
+		"audioid": "saixiaquqiyi",
+		"content": "林暗草惊风\nIn gloomy woods grass shivers at wind's howl,\n将军夜引弓\nThe general takes it for a tiger's growl.\n平明寻白羽\nHe shoots and seeks his arrow-plume next morn\n没在石棱中\nOnly to find a rock pierced mid the thorn.\n"
+	},
+	{
+		"title_c": "过分水岭",
+		"title_e": "At The Watershed",
+		"author": "温庭筠 Wen Tingyun",
+		"audioid": "guofenshuiling",
+		"content": "溪水无情似有情\nThe heartless stream appears to have a heart;\n入山三日得通行\nThree days among the hills we go along.\n岭头便是分头处\nAt watershed on mountain crest we part;\n惜别潺湲一夜声\nAll the night long it sings a farewell song.\n"
 	}
 ]

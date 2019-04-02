@@ -36,6 +36,7 @@ public class MainActivity extends AppCompatActivity {
     SearchView searchView ;
     List<Poetry> searchList = new ArrayList<>();
     List<Poetry> resultList = new ArrayList<>();
+    ListPopupWindow listPopupWindow;
     int curPoisition = 1;
    // Toolbar toolbar ;
   // private GestureDetector mDetector;
@@ -78,7 +79,7 @@ public class MainActivity extends AppCompatActivity {
     private void initSearchView(){
         searchView = findViewById(R.id.searchView);
         //searchView.onActionViewExpanded();
-        final ListPopupWindow listPopupWindow = new ListPopupWindow(MainActivity.this);
+         listPopupWindow = new ListPopupWindow(MainActivity.this);
         listPopupWindow.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
@@ -129,6 +130,10 @@ public class MainActivity extends AppCompatActivity {
                             "or author like ?","%"+newText+"%","%"+newText+"%","%"+newText+"%")
                             .limit(8)
                             .find(Poetry.class);
+                }
+                else{
+                    listPopupWindow.dismiss();
+
                 }
 
                 if(searchList.size() != 0)
